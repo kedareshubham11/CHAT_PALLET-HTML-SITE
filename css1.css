@@ -1,0 +1,16 @@
+.button {
+    background-color: green; /* Green */
+    border: y;
+    color: white;
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	font-style: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {border-radius: 12px;}
+.button2 {border-radius: 50%;}

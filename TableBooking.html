@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Book My Table | THE CHAAT PALATE</title>
+<link rel="stylesheet" type="text/css" href="css1.css">
+<style>
+	img:hover
+	{
+		border-color:green ;
+	}
+	
+	body{
+	background-image: url("IMG/c.jpg");
+	}
+</style>
+<script src="TableBooking.js" language="Javascript" language="text/javascript">
+
+	
+</script>
+</head>
+<body background="blue">
+<table width="100%" border='0'>
+<tr>
+	<td width="50%" valign='top'>
+	<form name='form1'>
+	<font face='Lucida Calligraphy' color='white' size=5>>>Please fill the following form : <br><br></font>
+	
+	<font face='Times New Roman' color='white' size=4>Name : <input type='text' name='Name' size=20  onchange="NameValid(this.value);"></form><br><br>
+	<font face='Times New Roman' color='white' size=4>Contact No. : <input type='text' name='contact' size='10' onchange="ContactValid(this.value)"><br><br>
+	
+	<font face='Times New Roman' color='white' size=4>Date : <input type='date' name='bDate' id="bDate"> &nbsp&nbsp&nbsp&nbsp&nbsp
+	
+	<font face='Times New Roman' color='white' size=4>Time : <input type='time' name='bTime' value="12:00:00"><br><br>
+	
+	<font face='Times New Roman' color='white' size=4>No. of People : <input type='range' name='NOP' min='1' max='12' value='1' onchange="RangeOut(this.value);" />&nbsp&nbsp&nbsp&nbsp&nbsp <input type='text' id="textInput" value='1' size=2><br><br>
+	
+	<font face='Times New Roman' color='white' size=4>Category : <input type='text' name='Category' size=20 id='image' value='Default'><br>
+	<font face='Times New Roman' color='white' size=2>(Please select the image for choosing the category.)<br><br>
+	<font face='Times New Roman' color='white' size=4>Branch : 
+	<input type="radio" name='brach'><font face='Times New Roman' color='white' size=3 >Station Road
+	<input type="radio" name='brach'><font face='Times New Roman' color='white' size=3>Cidco
+	
+	</form>
+	<br><br><br>
+	<center>
+	<button class="button button1" name="CheckAvailability" onclick='check();'>Check Availability</button>&nbsp&nbsp&nbsp&nbsp&nbsp
+	<button class="button button1" name="BookNow"  onclick="win();" >BookNow</button>
+	
+	
+	</td>
+	<td>
+		
+		<img src="IMG/family_dinner.jpg" name="Family & Friends" height='200' width='300' align="left" border-color="white" Id='img1' onmouseover="IMG()" onmousedown="Category(this.name)">
+		<img src="IMG/1.jpg" name="Business Formal" height='200' width='300' align='right' Id='img2' onmouseover="IMG()" onmousedown="Category(this.name)"><br>
+		<center>
+		<br><br><br><br><br><br><br><br><br><br>
+		<img src="IMG/personalized-dining-thumb.jpg" name="Romantic" height='200' width='300' Id='img3' onmouseover="IMG()" onmousedown="Category(this.name)" >
+		 
+	</td>
+</tr>
+</table>
+<br><hr><center><font face='Times New Roman' color='white'>Copyright 2016, The Chaat Palate. All rights reserved.</font></center>
+</body>
+</html>

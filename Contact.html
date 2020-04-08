@@ -1,0 +1,128 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css1.css">
+<script src="Contact.js" language="Javascript" language="text/javascript">
+		
+</script>
+<style>
+div{
+		position:absolute;
+		margin:2px 20px 10px 70px;
+		width:650px;
+		height:360px;
+		font-size:20px;
+		align:left;
+		color:yellow;
+		font-family:"Times New Roman" , Times, sans-serif;
+	}
+	
+div1
+	{
+		
+		display:block;
+		position:relative;
+		width:550px;
+		height:360px;
+		padding:100px 10px -50px 10px;
+		border-color:yellow;
+		margin:-10px 808px 20px 780px;
+		font-family:"Times New Roman" , Times, sans-serif;
+	}
+	
+</style>
+</head>
+<body background="IMG/c.jpg">
+	<div><br>
+		<font face='Lucida Calligraphy' color='skyblue' size=5>>>Write Us for any Query! <br><br></font>
+		<table width='100%' border='0'>
+		<form name='form1'>
+		<tr>
+			<td width='20%'>
+				<font face='Times New Roman' color='white' size=4>Name:  
+			</td>
+			<td>
+				<input type='text' name='Name' size=20  onchange="NameValid(this.value),highlight(this)">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<font face='Times New Roman' color='white' size=4>Email:
+			</td>
+			<td>
+				<input type='text' name='Mail' size=20  onchange="EmailValid(this.value);highlight(this)">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<font face='Times New Roman' color="white' size=4>Contact No.:
+			</td>
+			<td>
+				<input type='text' name='Contac' size=20  onchange="ContactValid(this.value),highlight(this)">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<font face='Times New Roman' color='white' size=4>Your Question :
+			</td>
+			<td>
+				<textarea rows="8"cols="50" name="que" disabled="true"></textarea>
+			</td>
+		</tr>
+	</table>
+	<br>
+	<center>
+	<button class="button button1" name="Sumbit" onclick="thank()">Submit</button>&nbsp&nbsp&nbsp
+	<button class="button button1" name="Reset" onclick="javascript:document.forms.form1.reset()"/>Reset</button><br><br></center>
+</div>
+<div1><br>
+	<font face='Lucida Calligraphy' color='skyblue' size=5>>> Contact Us! <br><br></font>
+	<table>
+		<tr>
+			<td width="12%">
+				<a href="mailto:infochaat@gamil.com"><img src="IMG/mail.png" height='40' width='40' name='mail'></a>
+			</td>
+			<td>
+				<font face='Times New Roman' color='yellow' size=3>chaatpalet@gamil.com 
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="IMG/call.jpg" height='40' width='40' name='call'>
+			</td>
+			<td>
+				<font face='Times New Roman' color='yellow' size=3>7775954978/9850323232 
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="www.facebook.com"><img src="IMG/Facebook.jpg" height='40' width='40' name='fb'></a>
+			</td>
+			<td>
+				<font face='Times New Roman' color='yellow' size=3>www.facebook.com/chaatpalate 
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="www.twitter.com"><img src="IMG/twit.jpg" height='40' width='40' name='tweet'>
+			</td>
+			<td>
+				<font face='Times New Roman' color='yellow' size=3>www.twitter.com/chaatpalate
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="www.google.co.in/maps"><img src="IMG/add.jpg" height='40' width='40' name='tweet'>
+			</td>
+			<td>
+				<font face='Times New Roman' color='yellow' size=3>1) Station Road - Aurangabad-431003<br>
+				Jalna Road, beside of Rama International Aurangabad-431001
+			</td>
+		</tr>
+	</table>
+	
+</div1>
+
+<br><br><hr>
+<center><font face='Times New Roman' color='white'>Copyright 2017, The Chaat Palate. All rights reserved.</font></center>
+</body>
+</html>

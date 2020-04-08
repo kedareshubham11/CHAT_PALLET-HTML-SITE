@@ -1,0 +1,40 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css1.css">
+</head>
+<title>contact us
+</title>
+<body >
+
+<h1 > << Contact Us  </h1>
+<div>
+<B> Contact No :</B> <span id="cn">7775954978/9850265478</br> <br>
+<B> Email :</B> <span id ="email"> </span>chatpalet@gmail.com<br><br>
+<B> Facebook :</B> <span id ="fb"></span>www.facebook.com/chatpalet</br><br>
+<B> Twitter :</B> <span id ="twitter"></span>www.twitter.com/chatpalet</br><br>
+<B> 
+</div>
+
+<script>
+if(window.XMLHttpRequest)
+{
+xmlhttp=new XMLHttpRequest();
+}
+else
+{
+xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+
+}
+
+xmlhttp.open("GET",contactus.xml",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responceXML;
+
+document.getElementById("cn").innerHTML=xmlDoc.getElementsByTag("cn")[0].childNodes[0].nodeValue;
+document.getElementById("email").innerHTML=xmlDoc.getElementsByTag("email")[0].childNodes[0].nodeValue;
+document.getElementById("fb").innerHTML=xmlDoc.getElementsByTag("fb")[0].childNodes[0].nodeValue;
+document.getElementById("twitter").innerHTML=xmlDoc.getElementsByTag("twitter")[0].childNodes[0].nodeValue;
+</script>
+</body>
+</html>
+

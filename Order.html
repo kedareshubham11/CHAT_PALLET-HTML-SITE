@@ -1,0 +1,96 @@
+<html>
+<head>
+<title> Order Online | THE CHAAT PALATE </title>
+<link rel="stylesheet" type="text/css" href="css1.css">
+<script src="Order.js" language="Javascript" language="text/javascript">
+	
+
+</script>
+	
+</head>
+<body background="IMG/tb.png">
+<font face='Lucida Calligraphy' color='Gray' size=5>>>Please fill the following form : <br><br></font>
+<table width="100%" border='0'>
+<tr>
+	<td width="20%" valign='bottom'></td>
+</tr>
+
+<tr>
+	<form name='form1'>
+	<td>
+	<font face='Times New Roman' color='black' size=4>Name : 
+	</td>
+	<td>
+	<input type='text' name='Name' size=25  onchange="NameValid(this.value);"></form>
+	</td>
+</tr>
+
+<tr>
+	<td>
+	<font face='Times New Roman' color='black' size=4>Email : 
+	</td>
+	<td>
+	<input type='text' name='Email' size='25' onchange="EmailValid(this.value)">
+	</td>
+</tr>
+
+<tr>
+	<td>
+	<font face='Times New Roman' color='black' size=4>Address : 
+	</td>
+	<td><textarea name='Address' rows='4' cols='23'></textarea>
+	</td>
+</tr>
+
+<tr>
+	<td>
+	<font face='Times New Roman' color='black' size=4>Country : 
+	</td>
+	<td>
+	<input type='text' name='Country' size='25' value="India" readonly=true />
+	</td>
+</tr>
+
+<tr>
+	<td>
+	<font face='Times New Roman' color='black' size=4>State : 
+	</td>
+	<td>
+	<input type='text' name='State' size='25' value="Maharshtra" readonly=true />
+	</td>
+</tr>
+
+<tr>
+	<td>
+	<font face='Times New Roman' color='black' size=4>City : 
+	</td>
+	<td>
+	<input type='text' name='City' size='25' value="Pune" readonly=true />
+	</td>
+</tr>
+
+<tr>
+	<td>
+	<font face='Times New Roman' color='black' size=4>Zip Code : 
+	</td>
+	<td>
+	<input type='text' name='Zip Code' size='25' onchange="ZipValid(this.value)">
+	</td>
+</tr>
+
+<tr>
+	<td>
+	<font face='Times New Roman' color='black' size=4>Contact No. : 
+	</td>
+	<td>
+	<input type='text' name='contact' size='10' onchange="ContactValid(this.value)"><br><br>
+	</td>
+</tr>
+</table><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<button class="button button1" name="OrderNow" onclick="Order();" >OrderNow</button>&nbsp&nbsp
+	<button class="button button1" name="Reset"  onclick="javascript:document.forms.form1.reset()">Reset</button>
+	<br><hr><center><font face='Times New Roman' color='white'>Copyright 2017, The Chaat Palate. All rights reserved.</font></center>
+
+</body>
+</html>

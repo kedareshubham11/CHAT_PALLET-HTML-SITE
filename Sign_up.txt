@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.events.example.eleglance.SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sign Up Page"
+            android:textSize="22dp"
+            android:id="@+id/fill"
+            android:autoLink="web"
+            android:textColor="#DA70D6"
+            android:textStyle="bold"
+            />
+        <AutoCompleteTextView
+            android:id="@+id/adminName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/log_admin_Name"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColorHint="#A9A9A9"
+            android:textColor="#000000" />
+
+        <AutoCompleteTextView
+            android:id="@+id/emailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/log_email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:singleLine="true"
+            android:textColorHint="#A9A9A9"
+            android:textColor="#000000" />
+
+        <AutoCompleteTextView
+            android:id="@+id/AdUserId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/log_admin_id"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="16dp"
+            android:textColorHint="#A9A9A9"
+            android:textColor="#000000" />
+
+        <AutoCompleteTextView android:id="@+id/APassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/log_password"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="16dp"
+            android:textColorHint="#A9A9A9"
+            android:textColor="#000000" />
+
+        <AutoCompleteTextView
+            android:id="@+id/ConfirmAPW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/log_confirm_password"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="16dp"
+            android:textColorHint="#A9A9A9"
+            android:textColor="#000000" />
+
+        <AutoCompleteTextView
+            android:id="@+id/AdGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/log_group_name"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="16dp"
+            android:textColorHint="#A9A9A9"
+            android:textColor="#000000" />
+
+        <Button android:id="@+id/email_sign_in_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="17dp"
+            android:text="@string/log_sign"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:background="#ff7e51c2"
+            android:onClick="admin_con"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

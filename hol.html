@@ -1,0 +1,102 @@
+<html>
+<head>
+<script language="Javascript" language="text/javascript">
+<!--
+function check()
+{
+	with(document.forms.form1)
+	{
+		if(one.checked==true && three.checked==true)
+		{
+			alert("Sorry. All incorrect answers.")
+		}
+		else if(two.checked==true && four.checked==true)
+		{
+			alert("One incorrect Answer. Better luck next time.")
+		}
+		else if(one.checked==true && four.checked==true)
+		{
+			alert("One incorrect Answer. Better luck next time.")
+		}
+		else if(two.checked==true && three.checked==true)
+		{
+			alert("Congratulations.You Have won a trip to Goa...<br>Contact Us on our toll free number for claim -8983990803.")
+	
+		}
+	}
+} 
+
+function detail()'
+{
+	var Name = prompt("Please Enter Your Name") ;
+	var E-mail = prompt("Please Enter Your E-mail") ;
+	
+}
+
+-->
+</script>
+<style>
+	
+	div{
+		background-color:white;
+		display:block;
+		position:relative;
+		width:650px;
+		height:410px;
+		border-style:double;
+		padding:100px 10px -50px 50px;
+		border-color:Black;
+		margin:5px 10px 120px;
+		font-family:"Comic Sans MS" , Times, sans-serif;
+		text-align:center;
+		}
+	p:hover{
+		font-style: italic;
+		cursor:pointer;
+		font-name:;
+		color:grey;
+	}
+	s2{
+		font-size:25px;
+		color:50%grey;
+		font-weight:900;
+		font-family:"Lucida Calligraphy" , Times, sans-serif;
+		
+	}
+</style>
+</head>
+<body onload="detail()" alink="Black" vlink="Black" link="Black" background="IMG/fin2.png">
+<center>
+<s2>
+Inorder to win a free holiday answer the following questions.
+</s2>
+<form name="form1" message="port">
+<br>
+<div>
+	<center><br>
+	<a>
+		<IMG height="125" src="IMG/logo3.png" width="135" border="0" name="cover">
+	</a>
+	</center>
+		Which Chaat item is called as Indian burger?
+	<p>
+		<A onmouseover="document.cover.src='IMG/DahiPapdiChaat.jpg'" onmouseout="document.cover.src='IMG/logo3.png'"><INPUT  type="radio" name="one" value="one"/>Dahi Papdi Chaat</A>
+	<br>
+		<A onmouseover="document.cover.src='IMG/VadaPav.png'"onmouseout="document.cover.src='IMG/logo3.png'"><INPUT  type="radio" name="two" value="two"/>Vada Paav</A>
+	</p>
+	Which is the India's most lovable Chaat item?
+	<p>
+		<A onmouseover="document.cover.src='IMG/Panipoori.jpg'" onmouseout="document.cover.src='IMG/logo3.png'"><INPUT  type="radio" name="three" value="three"/>Paani Puri</A>
+	<br>
+		<A onmouseover="document.cover.src='IMG/Samosa.jpg'" onmouseout="document.cover.src='IMG/logo3.png'"><INPUT  type="radio" name="four" value="four"/>Somaosa</A>
+	</p>
+	<INPUT  type="Button" value="Submit" onclick="check()" />
+<INPUT name="Reset" value="Reset" type="reset" />
+	
+</div>
+</center>
+</form><br><hr>
+ <center><font face='Times New Roman' color='gray'>Copyright 2016, The Chaat Palate. All rights reserved.</font></center>
+
+</body>
+</html>
